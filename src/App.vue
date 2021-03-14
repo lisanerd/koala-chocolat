@@ -1,7 +1,8 @@
 <template>
   <div id="app" class="container">
-  
-    <p style="color:green; font-family:verdana; font-size:30px">This is a paragraph !</p>
+    <p style="color: green; font-family: verdana; font-size: 30px">
+      What is you periodic element?
+    </p>
     <img alt="Vue logo" src="./assets/koala.jpg" height="254px" width="300px" />
     <h2></h2>
     <ParticleBtn
@@ -17,19 +18,24 @@
     <h2></h2>
     <button @click="btnOps.visible = !btnOps.visible">switch</button>
 
-    <input-contenteditable
-
-    />
-      <p>Insert your favorite number between 1 and 118 below</p>
-  <vue-number-input v-model="value" :min="1" :max="118" inline controls></vue-number-input>
-
+    <input-contenteditable />
+    <p>Insert your favorite number between 1 and 118 below</p>
+    <vue-number-input
+      v-model="value"
+      :min="1"
+      :max="118"
+      inline
+      controls
+    ></vue-number-input>
+    <h2>{{element.name}}</h2>
   </div>
 </template>
 
 <script>
-
 import ParticleBtn from "vue-particle-effect-buttons";
-import VueNumberInput from '@chenfengyuan/vue-number-input';
+import VueNumberInput from "@chenfengyuan/vue-number-input";
+
+var pt = require("periodic-table");
 
 export default {
   data() {
@@ -52,10 +58,19 @@ export default {
         visible: true,
         animating: false,
       },
+      value: 0
     };
   },
   name: "App",
-  components: { ParticleBtn, VueNumberInput},
+  components: { ParticleBtn, VueNumberInput },
+  computed: {
+    // a computed getter
+    element: function () {
+      // `this` points to the vm instance
+      console.log(this.value)
+      return pt.numbers[parseInt(this.value)];
+    },
+  },
 };
 </script>
 

@@ -12,6 +12,7 @@
     "animejs": "^3.2.1",
     "core-js": "^3.6.5",
     "node-sass": "^5.0.0",
+    "periodic-table": "^0.0.8",
     "sass-loader": "^11.0.1",
     "vue": "^2.6.11",
     "vue-input-contenteditable": "^1.0.1",

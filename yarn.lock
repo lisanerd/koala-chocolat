@@ -6425,6 +6425,11 @@ performance-now@^2.1.0:
   resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
   integrity sha1-Ywn04OX6kT7BxpMHrjZLSzd8nns=
 
+periodic-table@^0.0.8:
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/periodic-table/-/periodic-table-0.0.8.tgz#aa497dbbf5a97c23f7791aea6aabb30df196e858"
+  integrity sha1-qkl9u/WpfCP3eRrqaquzDfGW6Fg=
+
 picomatch@^2.0.4, picomatch@^2.0.5, picomatch@^2.2.1:
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.2.2.tgz#21f333e9b6b8eaff02468f5146ea406d345f4dad"
