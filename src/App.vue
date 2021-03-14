@@ -27,8 +27,8 @@ export default {
       btnOps: {
         type: "triangle",
         easing: "easeOutQuart",
-        size: 30,
-        particlesAmountCoefficient: 2,
+        size: 5,
+        particlesAmountCoefficient: 8,
         oscillationCoefficient: 2,
         color: function () {
           return Math.random() < 0.5 ? "#000000" : "#ffffff";
