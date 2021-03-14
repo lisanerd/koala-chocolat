@@ -1,8 +1,8 @@
 <template>
   <div id="app" class="container">
-    <img alt="Vue logo" src="./assets/koala.jpg" 
-        height="254px"
-    width="300px"> 
+  
+    <p style="color:green; font-family:verdana; font-size:30px">This is a paragraph.</p>
+    <img alt="Vue logo" src="./assets/koala.jpg" height="254px" width="300px" />
     <h2></h2>
     <ParticleBtn
       :visible.sync="btnOps.visible"
@@ -16,11 +16,21 @@
     <h2>visible:{{ btnOps.visible }}</h2> -->
     <h2></h2>
     <button @click="btnOps.visible = !btnOps.visible">switch</button>
+
+    <input-contenteditable
+
+    />
+      <p>Insert your favorite number between 1 and 118 below</p>
+  <vue-number-input v-model="value" :min="1" :max="118" inline controls></vue-number-input>
+
   </div>
 </template>
 
 <script>
+
 import ParticleBtn from "vue-particle-effect-buttons";
+import VueNumberInput from '@chenfengyuan/vue-number-input';
+
 export default {
   data() {
     return {
@@ -45,7 +55,7 @@ export default {
     };
   },
   name: "App",
-  components: { ParticleBtn },
+  components: { ParticleBtn, VueNumberInput},
 };
 </script>
 
