@@ -10,6 +10,8 @@
   "dependencies": {
     "animejs": "^3.2.1",
     "core-js": "^3.6.5",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^11.0.1",
     "vue": "^2.6.11",
     "vue-particle-effect-buttons": "^1.0.4"
   },
