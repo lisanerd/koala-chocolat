@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="container">
   
-    <p style="color:green; font-family:verdana; font-size:30px">This is a paragraph.</p>
+    <p style="color:green; font-family:verdana; font-size:30px">This is a paragraph !</p>
     <img alt="Vue logo" src="./assets/koala.jpg" height="254px" width="300px" />
     <h2></h2>
     <ParticleBtn
