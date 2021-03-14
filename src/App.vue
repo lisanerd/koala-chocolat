@@ -1,6 +1,8 @@
 <template>
   <div id="app" class="container">
-    <img alt="Vue logo" src="./assets/logo.png" />
+    <img alt="Vue logo" src="./assets/koala.jpg" 
+        height="254px"
+    width="300px"> 
     <h2></h2>
     <ParticleBtn
       :visible.sync="btnOps.visible"
@@ -25,8 +27,8 @@ export default {
       btnOps: {
         type: "triangle",
         easing: "easeOutQuart",
-        size: 6,
-        particlesAmountCoefficient: 4,
+        size: 30,
+        particlesAmountCoefficient: 2,
         oscillationCoefficient: 2,
         color: function () {
           return Math.random() < 0.5 ? "#000000" : "#ffffff";
@@ -59,10 +61,9 @@ export default {
 .container {
   background-image: linear-gradient(
     -128deg,
-    rgba(175, 231, 222, 0.93) 3%,
-    rgba(241, 158, 63, 0.938) 88%,
-    rgba(239, 39, 153, 0.93) 88%,
-    rgb(84, 18, 237) 100%
+    rgb(235, 146, 146) 3%,
+    rgba(168, 140, 245, 0.938) 88%,
+    rgb(136, 94, 235) 100%
   );
   /* display: flex; */
   width: 100%;
