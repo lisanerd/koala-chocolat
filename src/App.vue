@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
-    <img alt="Vue logo" src="./assets/IMG_2660.png" />
     <ParticleBtn
       :visible.sync="btnOps.visible"
       :animating.sync="btnOps.animating"
