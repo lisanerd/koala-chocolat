@@ -10,12 +10,12 @@
       :options="btnOps"
       cls="btn-cls"
     >
-      hello eveybody!
+      Koala Chocolat!!!
     </ParticleBtn>
     <!-- <h2>animating:{{ btnOps.animating }}</h2>
     <h2>visible:{{ btnOps.visible }}</h2> -->
     <h2></h2>
-    <button @click="btnOps.visible = !btnOps.visible">toggle</button>
+    <button @click="btnOps.visible = !btnOps.visible">switch</button>
   </div>
 </template>
 
@@ -63,7 +63,7 @@ export default {
     -128deg,
     rgb(235, 146, 146) 3%,
     rgba(168, 140, 245, 0.938) 88%,
-    rgb(136, 94, 235) 100%
+    rgba(94, 41, 219, 0.87) 100%
   );
   /* display: flex; */
   width: 100%;
