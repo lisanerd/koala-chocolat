@@ -58,7 +58,8 @@ export default {
         visible: true,
         animating: false,
       },
-      value: 0
+      value: 1
+      
     };
   },
   name: "App",
