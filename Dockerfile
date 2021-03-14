@@ -1,8 +1,8 @@
 FROM node:latest as build-stage
 WORKDIR /app
-COPY explorator/package*.json ./
+COPY package*.json ./
 RUN yarn install
-COPY explorator/ .
+COPY . .
 RUN yarn run build
 
 FROM nginx as production-stage
